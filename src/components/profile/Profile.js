@@ -10,17 +10,16 @@ function ProFile({ name, tag, location, avatar, stats }) {
         <p className={s.tag}>@{tag}</p>
         <p className={s.location}>{location}</p>
       </div>
-
       <ul className={s.stats}>
-        <li>
+        <li className={s.info}>
           <span className={s.label}>Followers</span>
           <span className={s.quantity}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={s.info}>
           <span className={s.label}>Views</span>
           <span className={s.quantity}>{stats.views}</span>
         </li>
-        <li>
+        <li className={s.info}>
           <span className={s.label}>Likes</span>
           <span className={s.quantity}>{stats.likes}</span>
         </li>
@@ -34,7 +33,7 @@ ProFile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.arrayOf(PropTypes.number),
+  stats: PropTypes.objectOf(PropTypes.number),
 };
 
 export default ProFile;
