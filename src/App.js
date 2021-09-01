@@ -9,12 +9,12 @@
 // import Statistics from './components/Statistics/Statistics';
 
 // 3я часть ДЗ
-// import friends from './components/FriendList/friends.json';
-// import FriendList from './components/FriendList/FriendList';
+import friends from './components/FriendList/friends.json';
+import FriendList from './components/FriendList/FriendList';
 
 // 4я часть ДЗ
-import TransactionHistory from './components/Transactions/TransactionHistory';
-import transactions from './components/Transactions/transactions.json';
+// import TransactionHistory from './components/Transactions/TransactionHistory';
+// import transactions from './components/Transactions/transactions.json';
 
 function App() {
   return (
@@ -31,10 +31,10 @@ function App() {
     // <Statistics title="Upload stats" stats={statisticalData} />
 
     // 3я часть ДЗ
-    // <FriendList friends={friends} />
+    <FriendList friends={friends} />
 
     // 4я часть ДЗ
-    <TransactionHistory items={transactions} />
+    // <TransactionHistory items={transactions} />
   );
 }
 
