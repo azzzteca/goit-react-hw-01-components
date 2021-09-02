@@ -6,8 +6,6 @@
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
-
-  /* background-color: teal; */
 }
 
 .title {
@@ -30,10 +28,6 @@
 
   display: grid;
   grid-template-columns: repeat(5, 160px);
-
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* text-align: center; */
 }
 
 .item {
@@ -43,10 +37,9 @@
   justify-content: center;
   align-items: center;
 
-  /* background-color: teal; */
-
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ffffff;
 }
 
 .blue {
@@ -71,4 +64,8 @@
 
 .label {
   margin-bottom: 20px;
+}
+
+.percentage {
+  font-size: large;
 }

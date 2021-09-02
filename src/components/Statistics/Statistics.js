@@ -8,26 +8,7 @@ function Statistics({ title, stats }) {
 
       <ul className={s.statList}>
         {stats.map(el => {
-          // const itemClass = () => {
-          //   switch (el.label) {
-          //     case '.docx':
-          //       return 'blue';
-          //     case '.pdf':
-          //       return 'violet';
-          //     case '.mp3':
-          //       return 'red';
-          //     case '.psd':
-          //       return 'green';
-          //     default:
-          //       return null;
-          //   }
-          // };
-
-          // const colorClass = itemClass();
-          // console.log(colorClass);
-
           let colorClass;
-          console.log(colorClass);
 
           switch (el.label) {
             case '.docx':
@@ -45,12 +26,11 @@ function Statistics({ title, stats }) {
             default:
               return null;
           }
-          console.log(colorClass);
 
           return (
-            <li key={el.id} className={`s.{colorClass}`}>
+            <li key={el.id} className={s[colorClass]}>
               <span className={s.label}>{el.label}</span>
-              <span className="percentage">{el.percentage}%</span>
+              <span className={s.percentage}>{el.percentage}%</span>
             </li>
           );
         })}
