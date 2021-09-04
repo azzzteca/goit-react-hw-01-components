@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import FriendListItem from './FriendListItem.js';
+import FriendListItem from './FriendListItem.jsx';
 import s from './FriendList.module.css';
 
-function FriendList({ friends }) {
+export default function FriendList({ friends }) {
   return (
     <ul className={s.list}>
       {friends.map(friend => (
@@ -24,5 +24,3 @@ FriendList.protoTypes = {
   isOnline: PropTypes.bool.isRequired,
   id: PropTypes.number.isRequired,
 };
-
-export default FriendList;

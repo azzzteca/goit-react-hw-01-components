@@ -1,16 +1,9 @@
 .profile {
   background-color: #ffffff;
-
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin: 50px auto;
   width: 300px;
   height: auto;
-
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
   border-radius: 6px;
 }
 
@@ -19,7 +12,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding-top: 30px;
   margin-bottom: 30px;
 }
@@ -33,13 +25,11 @@
 .name {
   font-size: 24px;
   font-weight: 700;
-
   margin-bottom: 8px;
 }
 
 .tag {
   margin-bottom: 0px;
-
   color: #72837e;
 }
 
@@ -50,16 +40,12 @@
 
 .stats {
   list-style: none;
-
   background-color: rgb(247, 247, 247);
-
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   margin: 0;
   padding: 0;
-
   border-top: 1px solid #c1ccc9;
 }
 
@@ -70,7 +56,6 @@
   align-items: center;
   grid-gap: 1px;
   height: auto;
-
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -81,15 +66,12 @@
 
 .label {
   text-align: center;
-
   margin-bottom: 6px;
-
   font-size: small;
   color: #72837e;
 }
 
 .quantity {
   text-align: center;
-
   font-weight: 800;
 }
